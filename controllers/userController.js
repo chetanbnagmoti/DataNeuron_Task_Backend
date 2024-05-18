@@ -89,7 +89,9 @@ exports.getTotalCount = async (req, res) => {
                 }
             }
         ]);
-
+        
+        console.log(result,"dssssssssssssssssssssssssssssssssssssssssssss")
+        
         if (result.length > 0) {
             res.status(200).send({totalCount: result[0].totalCount});
         } else {
